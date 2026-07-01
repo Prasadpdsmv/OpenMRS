@@ -34,7 +34,8 @@ public class DriverUtilites {
 
             WebDriver driverLocal;
             DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.setPlatform(Platform.WIN11);
+            //capabilities.setPlatform(Platform.WIN11);
+            capabilities.setPlatform(Platform.LINUX);
 
             System.out.println("desired capabilities");
             browser=ConfigReader.getProperty("browser");

@@ -66,7 +66,9 @@ public class LoginPage extends DriverUtilites {
     private WebElement SEARCH;
 
     public  void enterUsernameAndPassword(String usernameInput, String passwordInput ) {
-        driver.get("http://localhost/openmrs/spa/login");
+        //driver.get("http://localhost/openmrs/spa/login");  // for local execution
+        driver.get("http://gateway/openmrs/spa/login"); // for remote execution , docker container execution
+
         waitForElementVisible(username);
         username.sendKeys(usernameInput);
         continueButton.click();

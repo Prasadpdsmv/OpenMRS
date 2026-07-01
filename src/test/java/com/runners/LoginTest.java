@@ -13,7 +13,7 @@ import org.testng.annotations.DataProvider;
                 "json:target/cucumber.json",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
-        tags = "@reg"
+        tags = "@addPatient"
 
 )
 public class LoginTest extends AbstractTestNGCucumberTests {
